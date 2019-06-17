@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css'%}">
+ <script
+  src="http://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script> 
+  <title></title>
+</head>
+<body >
+  <nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand">FloodPredictionSystem</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">HOME<span class="sr-only">(current)</span></a></li>
+        <li><a href="/level">Level</a></li>
+       
+      </ul>
+      <ul class="nav  navbar-nav navbar-right">
+         <li><a href="/register">Register</a></li>
+        <li><a href="/about">AboutUs</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  
+  <div class="content1">
+                                                                       
+                                               <div class="image1">
+{%if a == 0%}
+<img src="{% static 'images/Capture.png'%}" class="image1">
+{% elif a == 3 %}
+<img src="{% static 'images/alert3.jpg'%}" class="image1">
+{%elif a == 2%}
+<img src="{% static 'images/alert2.jpg'%}" class="image1">
+{%else%}
+<img src="{% static 'images/alert1.jpg'%}" class="image1">
+{%endif%}
+                                               </div>
+                                               <div class="image2">
+                                                <h1 align="center">Map of Flood Prone Zone</h1>
+                                                {%if a == 0%}
+<h5>Currently no area is under flood effect </h5>
+{% elif a == 3 %}
+<h5>High effected flood is observerd in next 24 hour</h5>
+{%elif a == 2%}
+<h5>2 level flood is coming</h5>
+{%else%}
+<h5>1 level flood is coming</h5>
+{%endif%}
+  
+                                               </div>
+
+                                                   <!-- end of Change in graph-->
+
+  </div>
+  <div class="content2">
+    <div class="cont">
+      <h2 style="font-size:20px"> "This is a website for Flood Monitoring And Forecast Dissemination.<br>This site gives real time analysis of Dams/Reservoirs for Flood Prone cities and villages.
+      <br>Register for free to get beforehand information via email and text message."</h2>
+      
+    </div>
+  </div>
+  <!--<div class="pos"><a href=""><i><b>About </b></i></a></div>-->
+</div>
+<div class="footer">
+      <!--<div class="left">About Team<br>
+              <h1><font color="pink"></font></h1>-->
+      <div class="left">Contact Detail
+        <font color="white"><h3>Aarkkrisht Arjun</h3></font>
+        <font color="white"><h3>+91-9896647535</h3></font>
+
+        <font color="skyblue"><h4>Arjun@gmail.com</h4></font>
+        
+        
+
+      </div>
+      <div class="left">Contact Detail
+        <font color="white"><h3>Parvesh Bansal</h3></font>
+        <font color="white"><h3>+91-9896647535</h3></font>
+
+        <font color="skyblue"><h4>Parveshbansal47535@gmail.com</h4></font>
+        
+        
+
+      </div>
+      <div class="left">Contact Detail
+        <font color="white"><h3>Keshav Kumar</h3></font>
+        <font color="white"><h3>+91-8929737718</h3></font>
+
+        <font color="skyblue"><h4>knaharwar@gmail.com</h4></font>
+        
+        
+
+      </div>
+      
+      <div class="image"></div>
+      <script type="text/javascript" src="{%static 'js/img.js' %}"></script>
+</div>
+</body>
+</html>
+
