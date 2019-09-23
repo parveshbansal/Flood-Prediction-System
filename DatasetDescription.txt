@@ -1,0 +1,35 @@
+1. Title of Database: Flood Prediction Data
+
+2. Sources:
+	(a) Origin owners Of Database:
+	Department of Computer Application
+	National Institute Of Technology, Raipur
+	(contact:9896647535,parveshbansal47535@gmail.com)
+	(b) Donor of database:
+		Parvesh Bansal(MCA 3rd year NIT , Raipur parveshbansal47535@gmail.com)
+
+3. Past Usage:
+	Dataset was used in National Science Exhibhition,Avartan(Techfest Of NIT,Raipur)
+	
+
+4. Relevant Information Paragraph:
+
+   Dataset can be used to train the Machine Learning model which will
+   predict chance of flood or not based on the values 
+   of 2 parametrs.  
+
+   From the original data examples with missing values were removed (the
+   majority having the predicted value missing), and the ranges of the
+   continuous values have been scaled.
+6. Number of Attributes: 3
+
+7. Attribute information:
+   Given is the attribute name, attribute type, the measurement unit and a
+   brief description.  The number of class is the value to predict: either
+   as a continuous value or as a classification problem.
+
+	Name		Data Type	Meas.	Description
+	----		---------	-----	-----------
+	Flowrate  		Continious	Hr/ltr	Water flowrate measure by flowrate sensor
+	WaterLevel	Continious	Cm	Level of water at dam measure by Ultrasonic sensor
+	Y (class)		Range(0-3)		0 for no chance of flood,1 indicates low level flood,2indicates medium level flood chance,3 								indicates high level flood 
